@@ -59,6 +59,10 @@ def is_prime(x):
 
 
 assert is_prime(4)
+assert is_prime(1)
+assert is_prime("dsgdfshfjz")
+assert is_prime(4.567)
+
 
 """Exercise 2: develop the function 'get_digits'
 
