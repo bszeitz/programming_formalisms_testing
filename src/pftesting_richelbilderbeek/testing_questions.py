@@ -52,12 +52,13 @@ def is_prime(x):
     
     for i in range(2,x):
         if (x % i) == 0:
+            print(x, "is not prime")
             return False
 
     return True
 
 
-
+assert is_prime(4)
 
 """Exercise 2: develop the function 'get_digits'
 
