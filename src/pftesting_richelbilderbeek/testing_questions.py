@@ -41,6 +41,23 @@ This function determines if a number is prime.
 [*] vague on purpose
 """
 
+def is_prime(x):
+    
+    if not isinstance(x, int):
+        msg = "'number' must be a int. "
+        raise TypeError(
+            msg,
+            "Actual type of 'number': ", type(x),
+        )
+    
+    for i in range(2,x):
+        if (x % i) == 0:
+            return False
+
+    return True
+
+
+
 
 """Exercise 2: develop the function 'get_digits'
 
